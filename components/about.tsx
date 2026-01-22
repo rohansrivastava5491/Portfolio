@@ -16,9 +16,15 @@ export default function About() {
             <div className="neo-card bg-background">
               <h3 className="text-2xl font-bold mb-4">Who I Am</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I'm a full-stack developer with a passion for building clean, intuitive digital experiences. With 5+
-                years of experience, I've worked with startups, agencies, and enterprises to bring their visions to
-                life.
+                I’m a Computer Science Engineering graduate specializing in Artificial Intelligence and Machine Learning from Gujarat Technological University, Ahmedabad.
+
+I enjoy building real-world, data-driven solutions by combining strong software development skills with applied machine learning. My work includes intelligent recommendation systems, predictive models, interactive dashboards, and full-stack web applications.
+
+I have developed projects such as a news aggregation platform, a smart travel planner and companion web application, a real estate web application, a movie recommendation system, Emotion recognition system, Customer support agent, Event poster generation tool and a car price prediction model, —focused on performance, scalability, and user experience.
+
+Selected for the Amazon ML Summer School 2023 and ranked 5th in CodeWars at Lakshya Techfest, I bring strong problem-solving skills and a continuous learning mindset.
+
+Proficient in Python, JavaScript, React.js, Next.js, Node.js, Express.js, MongoDB, MySQL and modern ML frameworks, I am seeking opportunities where I can contribute to impactful AI-driven products.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 I specialize in React, Next.js, TypeScript, and modern web technologies. I believe in writing

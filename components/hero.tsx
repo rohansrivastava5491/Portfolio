@@ -1,5 +1,5 @@
 "use client"
-
+import Link from "next/link";
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import TypeWriter from "@/components/typewriter"
@@ -20,27 +20,31 @@ export default function Hero() {
             <div className="space-y-4">
               <h2 className="text-lg font-bold text-accent">Welcome to my portfolio</h2>
               <h1 className="text-5xl sm:text-6xl font-black leading-tight text-balance-custom">
-                I Build <span className="text-accent">Digital</span> Experiences
+                I am <span className="text-accent">Rohan Srivastava</span> 
               </h1>
             </div>
 
             <div className="text-lg text-muted-foreground">
               <TypeWriter
-                text="A passionate full-stack developer crafting beautiful, functional web applications with modern technologies and neo-brutalist design principles."
+                text="A passionate full-stack developer crafting beautiful, functional web applications and an AI engineer"
                 speed={30}
               />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button
-                size="lg"
-                className="neo-border font-bold text-base bg-foreground text-background hover:bg-accent hover:text-accent-foreground"
-              >
-                See Resume
-              </Button>
-              <Button variant="outline" size="lg" className="neo-border font-bold text-base bg-transparent">
-                Contact Me
-              </Button>
+              <Link href={"https://docs.google.com/document/d/1Me8JmbApceKUzTTjx1RBNfmovSqkBKmkFWslE7SAM78/edit?usp=sharing"} target="_blank">
+                <Button
+                  size="lg"
+                  className="neo-border font-bold text-base bg-foreground text-background hover:bg-accent hover:text-accent-foreground"
+                >
+                  See Resume
+                </Button>
+              </Link>
+              <a href={"#contact"}>
+                <Button variant="outline" size="lg" className="neo-border font-bold text-base bg-transparent">
+                  Contact Me
+                </Button>
+              </a>
             </div>
           </div>
 
