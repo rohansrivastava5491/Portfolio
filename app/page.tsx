@@ -45,12 +45,16 @@ export default function Home() {
         <About />
         <Projects />
         <Skills />
+        {/*
         <Stats />
         <Process />
+        */}
         <Story />
         <Contact />
+         {/*
         <Testimonials />
         <FAQ />
+        */}
       </main>
       <Footer />
       <ScrollToTop />

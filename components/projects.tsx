@@ -7,55 +7,61 @@ import { Button } from "@/components/ui/button"
 const projects = [
   {
     id: 1,
-    title: "AI Chat Platform",
-    description: "Real-time chat application with AI-powered responses",
-    category: "ai",
-    tags: ["Next.js", "TypeScript", "OpenAI"],
-    image: "/ai-chat-platform-dashboard.jpg",
+    title: "NewsHub – Real-Time News Aggregator",
+    description:
+      "A real-time news aggregator that allows users to filter articles by topic, date, and relevance, save articles.", 
+    category: "dev",
+    tags: ["Next.js", "Node.js", "Express", "MongoDB", "ShadCN", "NewsAPI"],
+    image: "/newshub-dashboard.jpg",
   },
   {
     id: 2,
-    title: "E-commerce Dashboard",
-    description: "Full-featured dashboard for managing online store",
-    category: "frontend",
-    tags: ["React", "Tailwind", "Charts"],
-    image: "/e-commerce-dashboard-interface.jpg",
+    title: "Smart Travel Planner & Companion",
+    description:
+      "An AI-powered travel planning platform that generates personalized itineraries based on user preferences.",
+    category: "dev",
+    tags: ["React", "Firebase", "Gemini API", "Google Places API"],
+    image: "/smart-travel-planner.jpg",
   },
   {
     id: 3,
-    title: "Real Estate Platform",
-    description: "Property listing and management system",
-    category: "fullstack",
-    tags: ["Next.js", "PostgreSQL", "Maps API"],
-    image: "/real-estate-platform.jpg",
+    title: "Movie Recommendation System",
+    description:
+      "A content-based movie recommendation system using cosine similarity, achieving 85% precision and optimized data pipelines for faster recommendations.",
+    category: "ai",
+    tags: ["Python", "Flask", "Scikit-learn", "ML libraries"],
+    image: "/movie-recommendation-system.jpg",
   },
   {
     id: 4,
-    title: "Fitness Tracker App",
-    description: "Mobile-first app for tracking workouts and health metrics",
-    category: "frontend",
-    tags: ["React Native", "Firebase", "Charts"],
-    image: "/fitness-tracker-app.jpg",
+    title: "Real-Time Facial Emotion Recognition System",
+    description:
+      "A real-time facial emotion recognition system using CNN models and OpenCV for live video streams. The model is exposed via a FastAPI endpoint and optimized for low-latency inference.",
+    category: "ai",
+    tags: ["Python", "OpenCV", "TensorFlow", "CNN", "FastAPI"],
+    image: "/emotion-recognition-system.jpg",
   },
   {
     id: 5,
-    title: "AI Image Generator",
-    description: "Image generation tool using machine learning",
+    title: "RAG-Based Customer Support Agent for E-commerce",
+    description:
+      "A Retrieval-Augmented Generation (RAG) chatbot that answers customer queries related to products, orders, and FAQs using vector search and embeddings for accurate, context-aware responses.",
     category: "ai",
-    tags: ["Next.js", "Python", "ML Model"],
-    image: "/ai-image-generator-interface.jpg",
+    tags: ["Python", "LangChain", "FAISS", "Pinecone", "OpenAI API", "FastAPI"],
+    image: "/rag-customer-support-agent.jpg",
   },
   {
     id: 6,
-    title: "Analytics Platform",
-    description: "Real-time analytics and reporting system",
-    category: "fullstack",
-    tags: ["React", "Node.js", "MongoDB"],
-    image: "/analytics-dashboard-visualization.jpg",
+    title: "AI-Powered Event Poster Generation Tool",
+    description:
+      "A generative AI application that creates event posters from text prompts using Stable Diffusion and ControlNet, with predefined styles and also structured layouts.",
+    category: "ai",
+    tags: ["Python", "Stable Diffusion", "ControlNet", "Streamlit"],
+    image: "/ai-poster-generator.jpg",
   },
 ]
 
-const categories = ["all", "ai", "frontend", "fullstack"]
+const categories = ["all", "ai", "dev"]
 
 export default function Projects() {
   const [ref, isInView] = useInView()

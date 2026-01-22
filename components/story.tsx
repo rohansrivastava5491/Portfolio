@@ -5,31 +5,27 @@ import { useInView } from "@/hooks/use-in-view"
 const timeline = [
   {
     type: "education",
-    year: "2019",
-    title: "Bachelor's Degree in Computer Science",
-    subtitle: "Tech University",
-    description: "Graduated with honors. Focused on web development, algorithms, and software architecture.",
+    year: "2021 – 2025",
+    title: "Bachelor of Engineering in Computer Science",
+    subtitle: "New LJ Institute of Engineering & Technology, Ahmedabad",
+    description:
+      "Specialized in Computer Science Engineering with a strong foundation in software development, data structures, and modern web technologies. Graduated with a CGPA of 8.69.",
   },
   {
     type: "experience",
-    year: "2020",
-    title: "Junior Frontend Developer",
-    subtitle: "StartUp Tech Co.",
-    description: "Built responsive web applications using React and modern JavaScript. Collaborated with cross-functional teams.",
+    year: "Jan 2025 – Mar 2025",
+    title: "Full Stack Web Developer Intern",
+    subtitle: "HealMeRight (Remote)",
+    description:
+      "Spearheaded development of key features for a health platform, boosting user engagement by 30%. Optimized application performance and mobile responsiveness, reducing load time by 15% and improving overall user experience.",
   },
   {
     type: "experience",
-    year: "2021",
-    title: "Full Stack Developer",
-    subtitle: "Digital Solutions Inc.",
-    description: "Developed end-to-end applications using Next.js, Node.js, and databases. Led frontend architecture decisions.",
-  },
-  {
-    type: "experience",
-    year: "2023",
-    title: "Senior Developer",
-    subtitle: "Innovation Labs",
-    description: "Led team of 5 developers. Implemented AI-powered features and optimized application performance.",
+    year: "May 2025 – Oct 2025",
+    title: "Software Developer Intern",
+    subtitle: "SrashtaSoft, Ahmedabad",
+    description:
+      "Built and maintained core web application features using Next.js and Firebase. Integrated Firebase Authentication and Cloud Firestore for secure data handling and developed responsive UI components for cross-device compatibility.",
   },
 ]
 

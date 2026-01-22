@@ -4,20 +4,71 @@ import { useInView } from "@/hooks/use-in-view"
 
 const skillCategories = [
   {
-    name: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "Framer Motion"],
+    name: "Languages",
+    skills: ["Python", "JavaScript", "Java"],
   },
   {
-    name: "Backend",
-    skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Express", "FastAPI"],
+    name: "Frontend Development",
+    skills: [
+      "React.js",
+      "Next.js",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Bootstrap",
+      "ShadCN/UI",
+      "Responsive Design",
+    ],
   },
   {
-    name: "Tools & Platforms",
-    skills: ["Git", "Docker", "AWS", "Vercel", "Firebase", "GitHub"],
+    name: "Backend & APIs",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "Firebase",
+    ],
   },
   {
-    name: "Design",
-    skills: ["Figma", "UI/UX Design", "Responsive Design", "Animation", "Web Standards", "Accessibility"],
+    name: "AI & Machine Learning",
+    skills: [
+      "PyTorch",
+      "TensorFlow",
+      "Hugging Face",
+      "Scikit-learn",
+      "NumPy",
+      "Pandas",
+      "Computer Vision",
+      "NLP",
+      "RAG",
+      "LLM Fine-tuning",
+    ],
+  },
+  {
+    name: "Vector Databases & Pipelines",
+    skills: [
+      "FAISS",
+      "Pinecone",
+      "Weaviate",
+      "Embeddings",
+      "Model Deployment",
+    ],
+  },
+  {
+    name: "Databases",
+    skills: ["MongoDB", "MySQL", "PostgreSQL", "Cloud Firestore"],
+  },
+  {
+    name: "Tools & DevOps",
+    skills: [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Jupyter Notebook",
+      "VS Code",
+    ],
   },
 ]
 

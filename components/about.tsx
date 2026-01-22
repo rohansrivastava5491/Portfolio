@@ -12,7 +12,7 @@ export default function About() {
             About <span className="text-accent">Me</span>
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid gap-8"> {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">*/}
             <div className="neo-card bg-background">
               <h3 className="text-2xl font-bold mb-4">Who I Am</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -32,7 +32,7 @@ Proficient in Python, JavaScript, React.js, Next.js, Node.js, Express.js, MongoD
               </p>
             </div>
 
-            <div className="neo-card bg-background">
+            {/*<div className="neo-card bg-background">
               <h3 className="text-2xl font-bold mb-4">My Approach</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex gap-3">
@@ -48,7 +48,7 @@ Proficient in Python, JavaScript, React.js, Next.js, Node.js, Express.js, MongoD
                   <span>Developing performant, scalable solutions</span>
                 </li>
               </ul>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>

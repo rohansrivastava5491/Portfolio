@@ -5,19 +5,44 @@ import type React from "react"
 import { useState } from "react"
 import { useInView } from "@/hooks/use-in-view"
 import { Button } from "@/components/ui/button"
+import Alert from "@/components/alert-popup"
 
 export default function Contact() {
   const [ref, isInView] = useInView()
   const [formData, setFormData] = useState({ name: "", email: "", message: "" })
+  const [loading, setLoading] = useState(false)
+  const [alert, setAlert] = useState<{ type: "success" | "error"; message: string } | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    setFormData({ name: "", email: "", message: "" })
+    setLoading(true)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setAlert({ type: "success", message: "Message sent successfully!" })
+        setFormData({ name: "", email: "", message: "" })
+      } else {
+        const error = await response.json()
+        setAlert({ type: "error", message: error.error || "Failed to send message" })
+      }
+    } catch (error) {
+      setAlert({ type: "error", message: "An error occurred. Please try again." })
+      console.error("Error submitting form:", error)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -71,13 +96,22 @@ export default function Contact() {
             <Button
               type="submit"
               size="lg"
-              className="w-full neo-border font-bold text-base bg-foreground text-background hover:bg-accent hover:text-accent-foreground"
+              disabled={loading}
+              className="w-full neo-border font-bold text-base bg-foreground text-background hover:bg-accent hover:text-accent-foreground disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </Button>
           </form>
         </div>
       </div>
+
+      {alert && (
+        <Alert
+          type={alert.type}
+          message={alert.message}
+          onClose={() => setAlert(null)}
+        />
+      )}
     </section>
   )
 }

@@ -3,10 +3,9 @@
 import { Github, Linkedin, Twitter, Mail } from "lucide-react"
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "#", label: "Email" },
+  { icon: Github, href: "https://github.com/rohansrivastava5491", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/rohan-srivastava-7938b3241/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:rohan.srivastava.5491@gmail.com", label: "Email" },
 ]
 
 export default function Footer() {
@@ -19,7 +18,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-black mb-2">DEV</h3>
-            <p className="text-muted-foreground">Building digital experiences with neo-brutalist design.</p>
+            <p className="text-muted-foreground">Building digital experiences</p>
           </div>
 
           {/* Links */}
@@ -54,6 +53,7 @@ export default function Footer() {
                   href={href}
                   aria-label={label}
                   className="neo-border p-2 bg-background text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
+                  target="_blank"
                 >
                   <Icon size={20} />
                 </a>
@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
+        {/* 
         <div className="border-t-4 border-foreground pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">© {currentYear} Portfolio. All rights reserved.</p>
           <div className="flex gap-6 text-sm text-muted-foreground">
@@ -72,7 +72,7 @@ export default function Footer() {
               Terms
             </a>
           </div>
-        </div>
+        </div>*/}
       </div>
     </footer>
   )

@@ -41,7 +41,7 @@ export default function Hero() {
                 </Button>
               </Link>
               <a href={"#contact"}>
-                <Button variant="outline" size="lg" className="neo-border font-bold text-base bg-transparent">
+                <Button  size="lg" className="neo-border font-bold text-base hover:bg-black hover:text-white">
                   Contact Me
                 </Button>
               </a>
