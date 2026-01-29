@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button"
 const projects = [
   {
     id: 1,
-    title: "NewsHub – Real-Time News Aggregator",
+    title: "NewsApp – Real-Time News Aggregator",
     description:
       "A real-time news aggregator that allows users to filter articles by topic, date, and relevance, save articles.", 
     category: "dev",
     tags: ["Next.js", "Node.js", "Express", "MongoDB", "ShadCN", "NewsAPI"],
-    image: "/newshub-dashboard.jpg",
+    image: "/NewsApp.png",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projects = [
       "An AI-powered travel planning platform that generates personalized itineraries based on user preferences.",
     category: "dev",
     tags: ["React", "Firebase", "Gemini API", "Google Places API"],
-    image: "/smart-travel-planner.jpg",
+    image: "/STPC.png",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const projects = [
       "A content-based movie recommendation system using cosine similarity, achieving 85% precision and optimized data pipelines for faster recommendations.",
     category: "ai",
     tags: ["Python", "Flask", "Scikit-learn", "ML libraries"],
-    image: "/movie-recommendation-system.jpg",
+    image: "/movie_recommendation_system.png",
   },
   {
     id: 4,
