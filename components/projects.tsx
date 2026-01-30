@@ -48,7 +48,7 @@ const projects = [
       "A Retrieval-Augmented Generation (RAG) chatbot that answers customer queries related to products, orders, and FAQs using vector search and embeddings for accurate, context-aware responses.",
     category: "ai",
     tags: ["Python", "LangChain", "FAISS", "Pinecone", "OpenAI API", "FastAPI"],
-    image: "/rag-customer-support-agent.jpg",
+    image: "fitness-tracker-app.jpg",
   },
   {
     id: 6,
