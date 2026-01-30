@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href={"https://docs.google.com/document/d/1Me8JmbApceKUzTTjx1RBNfmovSqkBKmkFWslE7SAM78/edit?usp=sharing"} target="_blank">
+              <Link href={"https://drive.google.com/file/d/12M6874PaYwD_gWAQ9lGgNXCpgAVk9gRb/view?usp=drivesdk"} target="_blank">
                 <Button
                   size="lg"
                   className="neo-border font-bold text-base bg-foreground text-background hover:bg-accent hover:text-accent-foreground"
