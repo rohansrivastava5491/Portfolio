@@ -57,7 +57,7 @@ const projects = [
       "A generative AI application that creates event posters from text prompts using Stable Diffusion and ControlNet, with predefined styles and also structured layouts.",
     category: "ai",
     tags: ["Python", "Stable Diffusion", "ControlNet", "Streamlit"],
-    image: "/ai-poster-generator.jpg",
+    image: "/ai-image-generator-interface.jpg",
   },
 ]
 
