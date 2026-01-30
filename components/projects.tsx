@@ -39,7 +39,7 @@ const projects = [
       "A real-time facial emotion recognition system using CNN models and OpenCV for live video streams. The model is exposed via a FastAPI endpoint and optimized for low-latency inference.",
     category: "ai",
     tags: ["Python", "OpenCV", "TensorFlow", "CNN", "FastAPI"],
-    image: "/emotion-recognition-system.jpg",
+    image: "/ai-chat-platform-dashboard.jpg",
   },
   {
     id: 5,
